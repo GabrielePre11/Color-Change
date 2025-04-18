@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="remote-control" data-control>
+
+            <!-- OPACITY/LIGHT CONTROLS (UP TO DATE) -->
+            <div class="controls">
+                <div class="opacity-controls">
+                    <button class="btn opacity-btn-up" aria-label="Light Up" data-light-up>
+                        <box-icon type='solid' name='sun'></box-icon>
+                    </button>
+
+                    <button class="btn opacity-btn-down" aria-label="Light Down" data-light-down>
+                        <box-icon name='sun'></box-icon>
+                    </button>
+                </div>
+
+                <!-- ON/OFF -->
+                <div class="on-off-controls">
+                    <button class="btn turn-off-btn" aria-label="Turn off" data-turnoff>
+                        <span>OFF</span>
+                    </button>
+
+                    <button class="btn turn-on-btn" aria-label="Turn on" data-turnon>
+                        <span>ON</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- RGBW BUTTONS -->
+            <div class="buttons">
+                <button class="btn red-btn" data-color="red" style="background-color: red;"><span>R</span></button>
+
+                <button class="btn green-btn" data-color="green"
+                    style="background-color: green;"><span>G</span></button>
+
+                <button class="btn blue-btn" data-color="blue" style="background-color: blue;"><span>B</span></button>
+
+                <button class="btn white-btn" data-color="white"
+                    style="background-color: white;"><span>W</span></button>
+
+                <!-- First row -->
+                <button class="btn orange-btn color" data-color="#cb770e" style="background-color: #cb770e;"></button>
+
+                <button class="btn light-green-btn color" data-color="#3ecb0e"
+                    style="background-color: #3ecb0e;"></button>
+
+                <button class="btn light-blue-btn color" data-color="#0e76cb"
+                    style="background-color: #0e76cb;"></button>
+
+                <button class="btn flash-btn ctrl" data-flash data-ctrl="flash"><span>FLASH</span></button>
+
+                <!-- Second row -->
+                <button class="btn light-orange-btn color" data-color="#ddb50c"
+                    style="background-color: #ddb50c;"></button>
+
+                <button class="btn light-green-btn color" data-color="#12dd94"
+                    style="background-color: #12dd94;"></button>
+
+                <button class="btn purple-btn color" data-color="#8c15ee" style="background-color: #8c15ee;"></button>
+
+                <!-- Up to Date -->
+                <button class="btn strobe-btn ctrl" data-strobe data-ctrl="strobe"><span>STROBE</span></button>
+
+                <!-- Third row -->
+                <button class="btn normal-orange-btn color" data-color="#f6b00a"
+                    style="background-color: #f6b00a;"></button>
+
+                <button class="btn normal-green-btn color" data-color="#066d84"
+                    style="background-color: #066d84;"></button>
+
+                <button class="btn fucsia-btn color" data-color="#cf0ed8" style="background-color: #cf0ed8;"></button>
+
+                <!-- Up to Date -->
+                <button class="btn fade-btn ctrl" data-fade data-ctrl="fade"><span>FADE</span></button>
+
+                <!-- Fourth row -->
+                <button class="btn yellow-btn color" data-color="#e7ed0c" style="background-color: #e7ed0c;"></button>
+
+                <button class="btn dark-green-btn color" data-color="#034557"
+                    style="background-color: #034557;"></button>
+
+                <button class="btn pink-btn color" data-color="#d66aea" style="background-color: #d66aea;"></button>
+
+                <!-- Up to Date -->
+                <button class="btn smooth-btn ctrl" data-smooth data-ctrl="smooth"><span>SMOOTH</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
